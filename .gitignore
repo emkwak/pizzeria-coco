@@ -1,0 +1,15 @@
+# Ignore Mac system files
+.DS_Store
+
+# Node modules (if you decide to add npm dependencies later)
+node_modules/
+
+# Log files
+*.log
+
+# Build directories (if you decide to use a build process later)
+dist/
+build/
+
+# Environment variables
+.env
