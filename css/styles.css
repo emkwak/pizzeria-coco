@@ -11029,6 +11029,13 @@ header.masthead h1, header.masthead .h1 {
   border: 0;
 }
 
+@media (max-width: 768px) {
+  .responsive-iframe {
+    padding-bottom: 150%;
+    /* Increase height for mobile devices */
+  }
+}
+
 .heading-primary {
   color: #333;
 }
