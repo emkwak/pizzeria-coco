@@ -2,13 +2,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Navbar shrink function
   var navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector("#mainNav");
+    const logoWhite = document.getElementById("logo-white");
+    const logoBlue = document.getElementById("logo-blue");
     if (!navbarCollapsible) {
       return;
     }
     if (window.scrollY === 0) {
       navbarCollapsible.classList.remove("navbar-shrink");
+      logoWhite.style.display = "inline";
+      logoBlue.style.display = "none";
     } else {
       navbarCollapsible.classList.add("navbar-shrink");
+      logoWhite.style.display = "none";
+      logoBlue.style.display = "inline";
     }
   };
 
