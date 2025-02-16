@@ -28,7 +28,8 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">
-                    <img src="assets/img/portfolio/cocologo.svg" alt="Pizzeria Coco logo" style="height: 50px;">
+                    <img src="assets/img/portfolio/cocologo-white.svg" alt="Pizzeria Coco logo" id="logo-white" style="height: 50px; display: inline;">
+                    <img src="assets/img/portfolio/cocologo-blue.svg" alt="Pizzeria Coco logo" id="logo-blue" style="height: 50px; display: none;">
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -59,30 +60,38 @@
         <section class="page-section bg-primary" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">About Us</h2>
-                        <hr class="divider divider-light" />
-                        <img class="img-fluid mb-4 rounded-4" src="assets/img/portfolio/thumbnails/about_us.jpg" alt="..." />
-                        <p class="text-white-75 mb-4">
-                            Welcome to Pizzeria Coco, your go-to mobile pop-up pizzeria for artisanal pizza crafted with passion. We specialize in
-                        creating unique, handmade pizzas with high-quality, locally sourced ingredients. Our dough is carefully fermented for
-                        48-72 hours, giving it a light, flavorful crust that enhances the taste of our premium pizza toppings.</p>
-                        <p class="text-white-75 mb-4">
-                            We offer unique pizzas that you won’t find anywhere else, like our Seoul Street Pizza, inspired by Korean flavors,
-                            featuring kimchi, chewy rice cakes, gochujang glaze, and other bold ingredients. This pizza reflects Emily’s
-                            Korean-American heritage. In addition to our specialty pizzas, we also serve classic favorites. We believe pizza is for
-                            everyone, so we offer the option to veganize all of our pizzas.
-                        </p>
-                        <p class="text-white-75 mb-4">
-                            Women-owned and operated, founded by Emily and Christina, we bring our passion for artisanal pizza directly to you at
-                            local events and pop-up locations. Our mission is simple: to serve the DC/MD/VA (DMV) community with the finest
-                            handcrafted pizzas made with love and the best ingredients available. Join us at our next pop-up, and taste the
-                            difference in every slice!
-                        </p>
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-center mt-0 mb-5">About Us</h2>
+                        <div class="row d-flex flex-column flex-lg-row align-items-start">
+                            <div class="col-lg-6">
+                                <img class="img-fluid mb-4 rounded-4" src="assets/img/portfolio/thumbnails/about_us.jpg"
+                                    alt="Two Pizzeria Coco owners preparing a artisanal Margherita pizza together at a pop-up event" />
+                            </div>                            <div class="col-lg-6">
+                                <p class="text-white mb-4 text-start">
+                                    Welcome to Pizzeria Coco, your go-to mobile pop-up pizzeria for artisanal pizza crafted with
+                                    passion. We specialize in creating unique, handmade pizzas with high-quality, locally
+                                    sourced ingredients. Our dough, made from scratch with unbleached, non-bromated flour, carefully fermented for 48-72 hours, giving it a light, flavorful crust that enhances the taste of our premium pizza toppings.
+                                </p>
+                                <p class="text-white mb-4 text-start">
+                                    We offer unique pizzas that you won’t find anywhere else, like our Seoul Street Pizza,
+                                    inspired by Korean flavors, featuring kimchi, chewy rice cakes, gochujang glaze, and other
+                                    bold ingredients. This pizza reflects Emily’s Korean-American heritage. In addition to our
+                                    specialty pizzas, we also serve classic favorites. We believe pizza is for everyone, so we
+                                    offer the option to veganize all of our pizzas.
+                                </p>
+                                <p class="text-white mb-4 text-start">
+                                    Women-owned and operated, founded by Emily and Christina, we bring our passion for artisanal
+                                    pizza directly to you at local events and pop-up locations. Our mission is simple: to serve
+                                    the DC/MD/VA (DMV) community with the finest handcrafted pizzas made with love and the best
+                                    ingredients available. Join us at our next pop-up, and taste the difference in every slice!
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Menu-->
         <section class="page-section" id="menu">
             <div class="container px-4 px-lg-5">
@@ -128,7 +137,6 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-10 col-md-12 text-center">
                     <h2 class="text-white mt-0">Pop-Up & Events<br>Calendar</h2>
-                    <hr class="divider divider-light" />
                     <p class="text-white mb-5">When & Where You Can Find Us</p>
                     <div class="responsive-iframe">
                         <iframe
@@ -137,8 +145,8 @@
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-12 d-flex flex-column align-items-center mt-5">
-                    <p class="text-white mb-3">Book Pizzeria Coco for your catering event!</p>
-                    <a class="btn btn-dark btn-xl" href="#contact">Book Us Now</a>
+                    <p class="text-white mb-3 text-center">Book Pizzeria Coco to cater your next event!<br>🎉 Celebrate with Pizza! 🍕</p>
+                    <a class="btn btn-dark btn-xl" href="mailto:pizzeriacocomd@gmail.com" aria-label="Email us at pizzeriacocomd@gmail.com">Get in Touch</a>
                 </div>
             </div>
         </div>
@@ -149,40 +157,40 @@
             <div class="row g-0">
                 <div class="col-lg-4 col-sm-6 col-sm-12">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpeg">
-                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/1.jpeg" alt="..." />
+                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/1.jpeg" alt="Co-owner of Pizzeria Coco cooking artisanal pizza at a pop-up event." />
                         <div class="portfolio-box-caption"></div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-sm-12">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpeg">
-                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/2.jpeg" alt="..." />
+                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/2.jpeg" alt="Topping a artisanal Margherita pizza with fresh basil at Pizzeria Coco pop-up event." />
                         <div class="portfolio-box-caption"></div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-sm-12">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpeg">
-                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/3.jpeg" alt="..." />
+                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/3.jpeg" alt="Co-owner of Pizzeria Coco having fun making a artisanal pepperoni pizza at a pop-up event." />
                         <div class="portfolio-box-caption">
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-sm-12">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpeg">
-                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/4.jpeg" alt="..." />
+                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/4.jpeg" alt="Korean street food-inspired Seoul Street artisanal pizza with red sauce, mozzarella, chewy rice cake, pepperoni, kimchi, gochujang glaze, scallions, and roasted sesame seeds at Pizzeria Coco pop-up event." />
                         <div class="portfolio-box-caption">
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-sm-12">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpeg">
-                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/5.jpeg" alt="..." />
+                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/5.jpeg" alt="Back of a Pizzeria Coco business T-shirt featuring a cute animated Coco the dog at a pop-up event." />
                         <div class="portfolio-box-caption">
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-sm-12">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpeg">
-                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/6.jpeg" alt="..." />
+                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/6.jpeg" alt="Four beautifully charred and cooked pizzas: Margherita, Seoul Street, Shroomami Bomb with mozzarella, mushroom, shallots, miso drizzle, basil, extra virgin olive oil at Pizzeria Coco pop-up event." />
                         <div class="portfolio-box-caption p-3">
                         </div>
                     </a>
@@ -195,14 +203,9 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Who is Coco?</h2>
-                        <hr class="divider divider-light" />
-                        <img class="img-fluid mb-4 rounded-4" src="assets/img/portfolio/thumbnails/coco.jpeg" alt="photo of Coco the dog" />
-                        <p class="text-white-75 mb-4">Pizzeria Coco is named in honor of Christina’s beloved dog, Coco, who passed away at the beginning of 2024. Coco wasn’t
-                        just any dog—she was a certified pizza lover, always ready to enjoy a tasty pizza crust as a special treat. In fact, we
-                        considered her our #1 pizza fan.
-                        When we started this business, we vowed to make Coco proud. Her love for pizza continues to inspire us every day, and we
-                        carry her spirit with us in every pizza we serve.
+                        <h2 class="text-white mt-0 mb-5">Who is Coco?</h2>
+                        <img class="img-fluid mb-4 rounded-4" src="assets/img/portfolio/thumbnails/coco.jpeg" alt="Coco the dog, the inspiration behind Pizzeria Coco's name" />
+                        <p class="text-white mb-4 text-start">Pizzeria Coco is named in honor of Christina’s beloved dog, Coco, who passed away at the beginning of 2024. Coco wasn’t just any dog—she was a certified pizza lover, always ready to enjoy a tasty pizza crust as a special treat. In fact, we considered her our #1 pizza fan. When we started this business, we vowed to make Coco proud. Her love for pizza continues to inspire us every day, and we carry her spirit with us in every pizza we serve.
                         </p>
                     </div>
                 </div>
@@ -210,23 +213,31 @@
         </section>
         <!-- Testimonials-->
                 <section class="page-section">
-                    <div class="px-4 px-lg-5">
-                        <h2 class="text-center mt-0 heading-primary">Testimonials</h2>
-                        <!-- <hr class="divider" /> -->
-                        <div class="row justify-content-center gx-4 gx-lg-5">
+                    <div class="container px-4 px-lg-5">
+                        <h2 class="text-center mt-0 mb-5 heading-primary">Testimonials</h2>
+                        <div class="row gx-4 gx-lg-5">
                             <div class="col-lg-3 col-md-12 text-center d-flex align-items-start">
                                 <div class="mt-4">
                                     <div class="mb-2"><i class="bi bi-suit-heart fs-1 text-primary"></i></div>
-                                    <p class="text-muted mb-0">Pizzeria Coco has the best pizza around. Period. They quickly became the staple of our farmers market in their first
-                                    year, selling out every week. Plus, they often changed up their menu, offering unique options far different than the
-                                    standard pizza – I mean, pizza with pomegranate seeds or kimchi?! Run, don’t walk, to Pizzeria Coco!</p>
-                                    <span class="testimonial-name">- Sandra M</span>
+                                    <p class="text-muted mb-0 text-start">
+                                        We are regular customers of Pizzeria Coco and can tell you that they are fantastic! We followed them
+                                        from their
+                                        neighborhood business to farmers markets and pop-ups. Yes, their pizza is that good!
+
+                                        Their pizzas are delicious, their recipes unique and flavorful, and their dough is the best I've ever had.
+                                        The Margherita, Shroomami, and Seoul Street are all amazing!
+
+                                        Emily and Christina, the owners, are hard-working, knowledgeable, engaging, and friendly.
+
+                                        We can’t recommend Pizzeria Coco enough; please give them a try and enjoy their amazing pizzas!
+                                    </p>
+                                    <span class="testimonial-name">- Rosie & Bo</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-12 text-center d-flex align-items-start">
                                 <div class="mt-4">
                                     <div class="mb-2"><i class="bi bi-suit-heart fs-1 text-primary"></i></div>
-                                    <p class="text-muted mb-0">Pizzeria Coco is amazing - you can tell they're using fresh ingredients, and the crust has that perfect hot oven crisp.
+                                    <p class="text-muted mb-0 text-start">Pizzeria Coco is amazing - you can tell they're using fresh ingredients, and the crust has that perfect hot oven crisp.
                                     The ingredient quality is noticeable in every bite.</p>
                                     <span class="testimonial-name">- Joe B</span>
                                 </div>
@@ -234,9 +245,17 @@
                             <div class="col-lg-3 col-md-12 text-center d-flex align-items-start">
                                 <div class="mt-4">
                                     <div class="mb-2"><i class="bi bi-suit-heart fs-1 text-primary"></i></div>
-                                    <p class="text-muted mb-0">We discovered Pizzeria Coco when they were just starting out and we have liked all of
-                                    the pizzas that we have tried. I think we’ve tried all of them. My favorite was a special of the month pizza with fig
-                                    jam, granny smith apples, cheddar cheese, pomegranates, and arugula.
+                                    <p class="text-muted mb-0 text-start">Pizzeria Coco has the best pizza around. Period. They quickly became the
+                                        staple of our farmers market in their first year, selling out every week. Plus, they often changed up their
+                                        menu, offering unique options far different than the standard pizza – I mean, pizza with pomegranate seeds
+                                        or kimchi?! Run, don’t walk, to Pizzeria Coco!</p>
+                                    <span class="testimonial-name">- Sandra M</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12 text-center d-flex align-items-start">
+                                <div class="mt-4">
+                                    <div class="mb-2"><i class="bi bi-suit-heart fs-1 text-primary"></i></div>
+                                    <p class="text-muted mb-0 text-start">We discovered Pizzeria Coco when they were just starting out and we have liked all of the pizzas that we have tried. I think we’ve tried all of them. My favorite was a special of the month pizza with fig jam, granny smith apples, cheddar cheese, pomegranates, and arugula.
                                     Another favorite is the Seoul Street pizza which features kimchi. My go-to pizza is pepperoni. My wife and I get 3
                                     pizzas every time. Always trying out the monthly special pizza.</p>
                                     <span class="testimonial-name">- Scott W</span>
@@ -250,10 +269,9 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Contact Us</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Have a question or want to book us for catering? We’d love to hear from
-                            you! <br>Reach out to us at <a class="text-light" <a class="btn btn-light btn-lg" href="mailto:pizzeriacocomd@gmail.com" aria-label="Email us at pizzeriacocomd@gmail.com">pizzeriacocomd@gmail.com</a> and
+                        <h2 class="text-white mt-0 mb-5">Contact Us</h2>
+                        <p class="text-white mb-4">Have a question or want to book us for catering? We’d love to hear from
+                            you! <br>Reach out to us at <a class="text-start" <a class="btn btn-light btn-lg" href="mailto:pizzeriacocomd@gmail.com" aria-label="Email us at pizzeriacocomd@gmail.com">pizzeriacocomd@gmail.com</a> and
                             we’ll get back to you soon!</p>
                         <div class="social-icons">
                             <a class="btn btn-lg" href="https://www.instagram.com/pizzeriacoco_dmv" target="_blank" aria-label="Visit our Instagram profile" role="button" tabindex="0" class="mx-2">
