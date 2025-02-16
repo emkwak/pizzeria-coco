@@ -62,8 +62,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #f4623a;
-  --bs-link-hover-color: #c34e2e;
+  --bs-link-color: #FFFFE0;
+  --bs-link-hover-color: #FFFF00;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -8075,8 +8075,7 @@ textarea.form-control-lg {
 }
 
 .text-white {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-white-rgb)) !important;
 }
 
 .text-body {
@@ -8085,8 +8084,7 @@ textarea.form-control-lg {
 }
 
 .text-muted {
-  --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #555555 !important;
 }
 
 .text-black-50 {
@@ -10993,15 +10991,25 @@ header.masthead h1, header.masthead .h1 {
 
 /* ADDED STYLES */
 
+@media (max-width: 992px) {
+  #logo-white {
+    display: none !important;
+  }
+
+  #logo-blue {
+    display: inline !important;
+  }
+}
+
 .testimonial-name {
   display: block;
   margin-top: 10px;
   font-style: italic;
-  color: #777;
+  color: #555555;
 }
 
 .social-icons a:focus {
-  outline: 2px solid currentColor;
+  outline: 2px solid #fff;
   outline-offset: 4px;
 }
 
