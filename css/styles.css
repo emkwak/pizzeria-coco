@@ -11019,6 +11019,11 @@ header.masthead h1, header.masthead .h1 {
   object-fit: cover;
 }
 
+.thumbnail,
+.image-1, .image-5 {
+  height: 750px;
+}
+
 .responsive-iframe {
   position: relative;
   width: 100%;
