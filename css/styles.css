@@ -11051,3 +11051,7 @@ header.masthead h1, header.masthead .h1 {
 .heading-primary {
   color: #333;
 }
+
+.commitment-icon {
+  font-size: 3em;
+}
