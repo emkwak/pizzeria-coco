@@ -11055,3 +11055,11 @@ header.masthead h1, header.masthead .h1 {
 .commitment-icon {
   font-size: 3em;
 }
+
+.link-with-emoji {
+  text-decoration: none;
+}
+
+.link-with-emoji span {
+  margin-right: 0.2em;
+}
