@@ -43,9 +43,10 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about" onclick="gtag('event', 'click', {'event_category': 'Navigation', 'event_label': 'About Us'});">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#menu" onclick="gtag('event', 'click', {'event_category': 'Navigation', 'event_label': 'Menu'});">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.hotplate.com/pizzeriacoco" onclick="gtag('event', 'click', {'event_category': 'Navigation', 'event_label': 'Order Now'});">Order Now</a></li>
                         <li class="nav-item"><a class="nav-link" href="#events" onclick="gtag('event', 'click', {'event_category': 'Navigation', 'event_label': 'Events'});">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu" onclick="gtag('event', 'click', {'event_category': 'Navigation', 'event_label': 'Menu'});">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" onclick="gtag('event', 'click', {'event_category': 'Navigation', 'event_label': 'About Us'});">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact" onclick="gtag('event', 'click', {'event_category': 'Navigation', 'event_label': 'Contact Us'});">Contact Us</a></li>
                     </ul>
                 </div>
@@ -60,43 +61,79 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5">Artisanal Pizza Crafted with Passion in DC, Maryland, Virginia</p>
-                        <a class="btn btn-primary btn-xl" href="#menu" onclick="gtag('event', 'click', {'event_category': 'Hero Image Interaction', 'event_label': 'View Menu CTA'});">View Menu</a>
+                        <a class="btn btn-primary btn-xl" href="https://www.hotplate.com/pizzeriacoco" onclick="gtag('event', 'click', {'event_category': 'Hero Image Interaction', 'event_label': 'Order Now CTA'});">Order Now</a>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- Commitment To Quality-->
-        <section class="page-section">
+        <!-- Events Calendar-->
+        <section class="page-section bg-primary" id="events">
+            <div class="container px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10 col-md-12 text-center">
+                        <h2 class="text-white mt-0">Pop-Up & Events<br>Calendar</h2>
+                        <p class="text-white mb-5">When & Where You Can Find Us</p>
+                        <div class="responsive-iframe">
+                            <iframe
+                                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&title=Pizzeria%20Coco%3A%20Upcoming%20Pop-Up%20%26%20Events&src=ZTQwMTQ1YjM1ODhhOWU1ZGEwNTRkMzNiMWU2NGQ3OGUyMzY4ZDk1MWVlMWI1OTc5MDdkYmFkNWM3MzZkM2VjNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5"
+                                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-12 d-flex flex-column align-items-center mt-5">
+                        <p class="text-white mb-3 text-center">Book Pizzeria Coco to cater your next event!<br>🎉 Celebrate with
+                            Pizza! 🍕</p>
+                        <a class="btn btn-dark btn-xl" href="mailto:hello@pizzeriacoco.com"
+                            aria-label="Email us at hello@pizzeriacoco.com">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Photo-->
+        <section>
+            <div class="photo-section" aria-label="Four beautifully charred and cooked pizzas: Margherita, Seoul Street, Shroomami Bomb with mozzarella, mushroom, shallots, miso drizzle, basil, extra virgin olive oil at Pizzeria Coco pop-up event."></div>
+        </section>
+        <!-- Menu-->
+        <section class="page-section" id="menu">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0 heading-primary">Our Commitment to Quality</h2>
+                <h2 class="text-center mt-0 heading-primary">Pizza Menu</h2>
+                <hr class="divider" />
+                <h5 class="text-center mt-0 heading-primary">ALL PIZZAS ARE 10-inches</h5>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <div class="mb-2 commitment-icon">🌾</i></div>
-                            <h3 class="h4 mb-2 heading-primary">Handcrafted Dough</h3>
-                            <p class="text-muted mb-0">Our dough is made from scratch with unbleached, non-bromated flour and fermented for 48 to 72 hours, resulting in a light, airy crust with deep, complex flavors.</p>
+                            <h3 class="h4 mb-2 heading-primary">Seoul Street Pizza</h3>
+                            <p class="text-muted mb-0">red sauce, mozzarella, chewy rice cake, pepperoni, kimchi, gochujang
+                                glaze, scallions, roasted sesame seeds</p>
+                            <h5 class="h5 mt-2 heading-primary">$17</h5>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <div class="mb-2 commitment-icon">🥬</i></div>
-                            <h3 class="h4 mb-2 heading-primary">Fresh Ingredients</h3>
-                            <p class="text-muted mb-0">We use only the freshest, highest-quality produce, cheeses, and house-made sauces, ensuring every pizza is packed with flavor and nutrition.</p>
+                            <h3 class="h4 mb-2 heading-primary">Shroomami Bomb</h3>
+                            <p class="text-muted mb-0">mozzarella, mushroom, shallots, miso drizzle, basil, extra virgin olive
+                                oil</p>
+                            <h5 class="h5 mt-2 heading-primary">$16.50</h5>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <div class="mb-2 commitment-icon">🔥</i></div>
-                            <h3 class="h4 mb-2 heading-primary">Artisanal Techniques</h3>
-                            <p class="text-muted mb-0">Every pizza is crafted with passion and precision, from the hand-stretched dough to the thoughtfully curated toppings.</p>
+                            <h3 class="h4 mb-2 heading-primary">Margherita</h3>
+                            <p class="text-muted mb-0">red sauce, mozzarella, basil, extra virgin olive oil</p>
                         </div>
+                        <h5 class="h5 mt-2 heading-primary">$15</h5>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <div class="mb-2 commitment-icon">⏳</i></div>
-                            <h3 class="h4 mb-2 heading-primary">Patience in Every Bite</h3>
-                            <p class="text-muted mb-0">Our slow fermentation process enhances both taste and texture, making each bite more enjoyable and memorable.</p>
+                            <h3 class="h4 mb-2 heading-primary">Pepperoni</h3>
+                            <p class="text-muted mb-0">red sauce, mozzarella, pepperoni</p>
+                            <h5 class="h5 mt-2 heading-primary">$16</h5>
                         </div>
+                    </div>
+                    <p class="text-center mt-4">* Vegan options available</p>
+                    <div class="col-md-12 d-flex flex-column align-items-center mt-2">
+                        <a class="btn btn-primary btn-xl" href="https://www.hotplate.com/pizzeriacoco"
+                            onclick="gtag('event', 'click', {'event_category': 'Hero Image Interaction', 'event_label': 'Order Now CTA'});">Order
+                            Now</a>
                     </div>
                 </div>
             </div>
@@ -134,62 +171,42 @@
                 </div>
             </div>
         </section>
-
-        <!-- Menu-->
-        <section class="page-section" id="menu">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0 heading-primary">Pizza Menu</h2>
-                <hr class="divider" />
-                <h5 class="text-center mt-0 heading-primary">ALL PIZZAS ARE 10-inches</h5>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <h3 class="h4 mb-2 heading-primary">Seoul Street Pizza</h3>
-                            <p class="text-muted mb-0">red sauce, mozzarella, chewy rice cake, pepperoni, kimchi, gochujang glaze, scallions, roasted sesame seeds</p>
-                            <h5 class="h5 mt-2 heading-primary">$17</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <h3 class="h4 mb-2 heading-primary">Shroomami Bomb</h3>
-                            <p class="text-muted mb-0">mozzarella, mushroom, shallots, miso drizzle, basil, extra virgin olive oil</p>
-                            <h5 class="h5 mt-2 heading-primary">$16.50</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <h3 class="h4 mb-2 heading-primary">Margherita</h3>
-                            <p class="text-muted mb-0">red sauce, mozzarella, basil, extra virgin olive oil</p>
-                        </div>
-                        <h5 class="h5 mt-2 heading-primary">$15</h5>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <h3 class="h4 mb-2 heading-primary">Pepperoni</h3>
-                            <p class="text-muted mb-0">red sauce, mozzarella, pepperoni</p>
-                            <h5 class="h5 mt-2 heading-primary">$16</h5>
-                        </div>
-                    </div>
-                    <p class="text-center mt-4">* Vegan options available</p>
-                </div>
-            </div>
-        </section>
-    <!-- Events Calendar-->
-    <section class="page-section bg-primary" id="events">
-        <div class="container px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-10 col-md-12 text-center">
-                    <h2 class="text-white mt-0">Pop-Up & Events<br>Calendar</h2>
-                    <p class="text-white mb-5">When & Where You Can Find Us</p>
-                    <div class="responsive-iframe">
-                        <iframe
-                            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&title=Pizzeria%20Coco%3A%20Upcoming%20Pop-Up%20%26%20Events&src=ZTQwMTQ1YjM1ODhhOWU1ZGEwNTRkMzNiMWU2NGQ3OGUyMzY4ZDk1MWVlMWI1OTc5MDdkYmFkNWM3MzZkM2VjNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5"
-                            style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <!-- Commitment To Quality-->
+    <section class="page-section">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0 heading-primary">Our Commitment to Quality</h2>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2 commitment-icon">🌾</i></div>
+                        <h3 class="h4 mb-2 heading-primary">Handcrafted Dough</h3>
+                        <p class="text-muted mb-0">Our dough is made from scratch with unbleached, non-bromated flour and
+                            fermented for 48 to 72 hours, resulting in a light, airy crust with deep, complex flavors.</p>
                     </div>
                 </div>
-                <div class="col-lg-10 col-md-12 d-flex flex-column align-items-center mt-5">
-                    <p class="text-white mb-3 text-center">Book Pizzeria Coco to cater your next event!<br>🎉 Celebrate with Pizza! 🍕</p>
-                    <a class="btn btn-dark btn-xl" href="mailto:hello@pizzeriacoco.com" aria-label="Email us at hello@pizzeriacoco.com">Get in Touch</a>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2 commitment-icon">🥬</i></div>
+                        <h3 class="h4 mb-2 heading-primary">Fresh Ingredients</h3>
+                        <p class="text-muted mb-0">We use only the freshest, highest-quality produce, cheeses, and
+                            house-made sauces, ensuring every pizza is packed with flavor and nutrition.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2 commitment-icon">🔥</i></div>
+                        <h3 class="h4 mb-2 heading-primary">Artisanal Techniques</h3>
+                        <p class="text-muted mb-0">Every pizza is crafted with passion and precision, from the
+                            hand-stretched dough to the thoughtfully curated toppings.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2 commitment-icon">⏳</i></div>
+                        <h3 class="h4 mb-2 heading-primary">Patience in Every Bite</h3>
+                        <p class="text-muted mb-0">Our slow fermentation process enhances both taste and texture, making
+                            each bite more enjoyable and memorable.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -232,8 +249,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-sm-12">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpeg">
-                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/6.jpeg" alt="Four beautifully charred and cooked pizzas: Margherita, Seoul Street, Shroomami Bomb with mozzarella, mushroom, shallots, miso drizzle, basil, extra virgin olive oil at Pizzeria Coco pop-up event." />
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/7.jpeg">
+                        <img class="img-fluid thumbnail" src="assets/img/portfolio/thumbnails/7.jpeg" alt="Freshly made from scratch, 72-hour fermented pizza dough balls shining in the sun at a Pizzeria Coco pop-up event." />
                         <div class="portfolio-box-caption p-3">
                         </div>
                     </a>

@@ -11063,3 +11063,18 @@ header.masthead h1, header.masthead .h1 {
 .link-with-emoji span {
   margin-right: 0.2em;
 }
+
+.photo-section {
+  background: url("../assets/img/portfolio//fullsize/6.jpeg");
+  height: 100vw;
+  background-position: center 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden
+}
+
+@media (max-width: 767px) {
+  .photo-section {
+    height: 120vw;
+  }
+}
