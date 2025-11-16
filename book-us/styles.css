@@ -56,7 +56,14 @@
    }
 
    .logo-section {
+     text-align: center;
      margin-bottom: 30px;
+   }
+
+   .logo {
+     max-width: 100%;
+     height: auto;
+     width: 500px;
    }
 
    .hero h1 {
@@ -500,7 +507,6 @@
 
    footer a:hover {
      color: #ffd699;
-     text-decoration: underline;
    }
 
    .women-owned {
@@ -539,6 +545,54 @@
      height: 100%;
      object-fit: cover;
    }
+
+   .social-icons a:focus {
+     outline: 2px solid #fff;
+     outline-offset: 4px;
+   }
+
+     .event-list {
+       max-width: 900px;
+       margin: 0 auto;
+     }
+
+     .event-columns {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 60px;
+     }
+
+     .event-column ul {
+       list-style: none;
+       padding: 0;
+     }
+
+     .event-column li {
+       padding: 16px 0;
+       border-bottom: 1px solid #e8e8e8;
+       font-size: 1.05em;
+       line-height: 1.6;
+       color: #666;
+     }
+
+     .event-column li:last-child {
+       border-bottom: none;
+     }
+
+     .event-column li strong {
+       color: #1a1a1a;
+       font-weight: 600;
+       display: block;
+       margin-bottom: 4px;
+       font-size: 1.1em;
+     }
+
+     @media (max-width: 768px) {
+       .event-columns {
+         grid-template-columns: 1fr;
+         gap: 0;
+       }
+     }
 
    @media (max-width: 768px) {
      .hero h1 {
