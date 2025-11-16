@@ -14,6 +14,14 @@
       <!-- Bootstrap Icons-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="./styles.css" rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDT7FX9FDZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-WDT7FX9FDZ');
+    </script>
   </head>
 
   <body>
@@ -33,7 +41,7 @@
           <span class="badge">✨ Handcrafted Dough</span>
         </div>
         <div>
-          <a href="#booking" class="cta-button">Book Your 2026 Event</a>
+          <a href="#booking" class="cta-button" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Book Your Event'});">Book Your 2026 Event</a>
         </div>
       </div>
     </section>
