@@ -600,3 +600,32 @@
        grid-template-columns: 1fr;
      }
    }
+
+   /* Booking Button */
+     .center {
+       text-align: center;
+     }
+
+      .cta-section-button {
+        display: inline-block;
+          background: #4162d8;
+          color: white;
+          padding: 18px 45px;
+          font-size: 1.2em;
+          font-weight: 700;
+          text-decoration: none;
+          border-radius: 50px;
+          margin: 20px 10px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease;
+          border: none;
+          cursor: pointer;
+
+      }
+
+      .cta-section-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        background: #1d401d;
+        color: white;
+      }
