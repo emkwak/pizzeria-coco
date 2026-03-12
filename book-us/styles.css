@@ -629,9 +629,3 @@
         background: #1d401d;
         color: white;
       }
-
-      /* Feature In Logo */
-      #press a img:hover {
-        filter: grayscale(100%) !important;
-        opacity: 0.5 !important;
-      }

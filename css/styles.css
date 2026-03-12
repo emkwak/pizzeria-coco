@@ -10830,6 +10830,9 @@ body {
 .page-section {
   padding: 8rem 0;
   background-color: #FFF5E5;
+  @media (max-width: 768px) {
+      padding: 4rem 0;
+    }
 }
 
 .text-white-75 {
@@ -11079,11 +11082,6 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-/* Feature In Logo */
-#press a img:hover {
-  filter: grayscale(100%) !important;
-  opacity: 0.5 !important;
-}
 
 footer {
   text-align: center;
