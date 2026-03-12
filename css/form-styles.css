@@ -1,0 +1,337 @@
+/* Booking Form */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #4162d8;
+  --white: #ffffff;
+  --off-white: #f7f8fc;
+  --text: #1a1f36;
+  --label: #3a4060;
+  --muted: #6b7399;
+  --border: #dde1f0;
+  --accent: #4162d8;
+  --accent-light: rgba(65, 98, 216, 0.08);
+  --error: #d63b3b;
+  --success: #1a7a4a;
+}
+
+.catering-form-wrap {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 40px 16px 60px;
+}
+
+.cf-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.cf-header h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.cf-header p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300;
+}
+
+.cf-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: clamp(24px, 5vw, 44px);
+  box-shadow: 0 20px 60px rgba(20, 30, 80, 0.25);
+}
+
+.cf-section {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 32px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cf-section:first-of-type {
+  margin-top: 0;
+}
+
+.cf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 500px) {
+  .cf-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cf-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.cf-field:last-child {
+  margin-bottom: 0;
+}
+
+.cf-field label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--label);
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+
+.cf-field label .req {
+  color: var(--accent);
+  margin-left: 2px;
+}
+
+.cf-field label .opt {
+  color: var(--muted);
+  font-weight: 300;
+  font-size: 0.72rem;
+  margin-left: 4px;
+}
+
+.cf-field input,
+.cf-field select,
+.cf-field textarea {
+  width: 100%;
+  padding: 10px 13px;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  background: var(--off-white);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text);
+  transition: border-color 0.18s, box-shadow 0.18s, background 0.18s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.cf-field input:focus,
+.cf-field select:focus,
+.cf-field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(65, 98, 216, 0.12);
+  background: var(--white);
+}
+
+.cf-select-wrap {
+  position: relative;
+  display: block;
+}
+
+.cf-select-wrap::after {
+  content: '';
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 7px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7399' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.cf-select-wrap select {
+  padding-right: 34px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cf-field textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.6;
+}
+
+.cf-check-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cf-check-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 13px;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  background: var(--off-white);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  user-select: none;
+  pointer-events: none;
+}
+
+.cf-check-option:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.cf-check-option input[type="checkbox"] {
+  width: 15px !important;
+  height: 15px !important;
+  min-width: 15px;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.cf-check-option:has(input:checked) {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.cf-check-option span {
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.cf-check-option input:checked+span {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.cf-error-msg {
+  font-size: 0.73rem;
+  color: var(--error);
+  margin-top: 4px;
+  display: none;
+}
+
+.cf-field.has-error input,
+.cf-field.has-error select,
+.cf-field.has-error textarea {
+  border-color: var(--error);
+  background: #fff8f8;
+}
+
+.cf-field.has-error .cf-error-msg {
+  display: block;
+}
+
+.cf-submit-wrap {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.cf-submit-note {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.cf-submit-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 13px 40px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background 0.18s, transform 0.1s, box-shadow 0.18s;
+  box-shadow: 0 4px 14px rgba(65, 98, 216, 0.35);
+}
+
+.cf-submit-btn:hover {
+  background: #3351c0;
+  box-shadow: 0 6px 20px rgba(65, 98, 216, 0.45);
+}
+
+.cf-submit-btn:active {
+  transform: scale(0.99);
+}
+
+.cf-submit-btn:disabled {
+  background: #a0aac8;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cf-banner {
+  display: none;
+  text-align: center;
+  padding: 28px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.cf-banner.success {
+  background: rgba(26, 122, 74, 0.07);
+  border: 1px solid rgba(26, 122, 74, 0.2);
+}
+
+.cf-banner.fail {
+  background: rgba(214, 59, 59, 0.06);
+  border: 1px solid rgba(214, 59, 59, 0.2);
+}
+
+.cf-banner-icon {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.cf-banner h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.cf-banner.success h3 {
+  color: var(--success);
+}
+
+.cf-banner.fail h3 {
+  color: var(--error);
+}
+
+.cf-banner p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .cf-row {
+    display: block !important;
+  }
+
+  .cf-row .cf-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}

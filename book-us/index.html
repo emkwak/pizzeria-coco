@@ -19,7 +19,7 @@
       rel="stylesheet">
       <!-- Bootstrap Icons-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="./styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDT7FX9FDZ"></script>
     <script>
@@ -77,14 +77,167 @@
         <strong>⚡ Prime dates for 2026 are filling fast!</strong> Spring and summer weekends are especially popular. Book
         now to guarantee your preferred date.
       </div>
-      <div class="booking-form">
-        <iframe id="JotFormIFrame-252438898831068" title="Booking Inquiry" onload="window.parent.scrollTo(0,0)"
-          allowtransparency="true" allow="geolocation; microphone; camera; fullscreen; payment"
-          src="https://form.jotform.com/252438898831068" frameborder="0"
-          style="min-width:100%;max-width:100%;height:539px;border:none;" scrolling="no">
-        </iframe>
-        <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-        <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-252438898831068']", "https://form.jotform.com/")</script>
+
+      <!-- Booking Form -->
+      <div class="catering-form-wrap">
+
+        <div class="cf-header">
+          <h2>Booking Inquiry</h2>
+          <p class="cf-subheader">Please fill out the form below to inquire about our event services. We will contact you shortly.</p>
+        </div>
+
+        <div class="cf-card">
+          <form id="cateringForm" novalidate>
+
+            <input type="hidden" name="access_key" value="a8b59588-dfd5-4ebe-98ca-4793c0003c89" />
+            <input type="hidden" name="subject" value="" />
+            <input type="hidden" name="from_name" value="" />
+            <input type="hidden" name="replyto" id="cf_replyto" value="" />
+
+            <!-- Contact Info -->
+            <div class="cf-section">Contact Information</div>
+
+            <div class="cf-row">
+              <div class="cf-field" id="cf-fullname">
+                <label for="cf_fullname">Full Name <span class="req">*</span></label>
+                <input type="text" id="cf_fullname" name="Full Name" placeholder="Jane Smith" autocomplete="name" />
+                <span class="cf-error-msg">Please enter your full name.</span>
+              </div>
+              <div class="cf-field" id="cf-phone">
+                <label for="cf_phone">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="cf_phone" name="Phone Number" placeholder="(555) 000-0000" autocomplete="tel" />
+                <span class="cf-error-msg">Please enter your phone number.</span>
+              </div>
+            </div>
+
+            <div class="cf-field" id="cf-email">
+              <label for="cf_email">Email Address <span class="req">*</span></label>
+              <input type="email" id="cf_email" name="Email Address" placeholder="jane@example.com" autocomplete="email" />
+              <span class="cf-error-msg">Please enter a valid email address.</span>
+            </div>
+
+            <!-- Event Details -->
+            <div class="cf-section">Event Details</div>
+
+            <div class="cf-row">
+              <div class="cf-field" id="cf-date">
+                <label for="cf_date">Event Date <span class="req">*</span></label>
+                <input type="date" id="cf_date" name="Event Date" />
+                <span class="cf-error-msg">Please select a date.</span>
+              </div>
+              <div class="cf-field" id="cf-time">
+                <label for="cf_time">Event Time<span class="req">*</span></label>
+                <input type="text" id="cf_time" name="Event Time" placeholder="Start & End time" autocomplete="off" />
+                <span class="cf-error-msg">Please enter the event start & end time.</span>
+              </div>
+            </div>
+
+            <div class="cf-field" id="cf-location">
+              <label for="cf_location">Event Location Address <span class="req">*</span></label>
+              <input type="text" id="cf_location" name="Event Location" placeholder="123 Main St, City, State, ZIP"
+                autocomplete="street-address" />
+              <span class="cf-error-msg">Please enter the event location.</span>
+            </div>
+
+            <div class="cf-row">
+              <div class="cf-field" id="cf-eventtype">
+                <label for="cf_eventtype">Type of Event <span class="req">*</span></label>
+                <div class="cf-select-wrap">
+                  <select id="cf_eventtype" name="Type of Event">
+                    <option value="">Select event type...</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="Party / Social">Party / Social</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Holiday">Holiday</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <span class="cf-error-msg">Please select an event type.</span>
+              </div>
+              <div class="cf-field" id="cf-guests">
+                <label for="cf_guests">Number of Guests <span class="req">*</span></label>
+                <input type="text" id="cf_guests" name="Number of Guests" placeholder="e.g. 75" inputmode="numeric"
+                  pattern="[0-9]*" />
+                <span class="cf-error-msg">Please enter guest count.</span>
+              </div>
+            </div>
+
+            <div class="cf-field" id="cf-details">
+              <label for="cf_details">Details of Event <span class="req">*</span></label>
+              <textarea id="cf_details" name="Event Details"
+                placeholder="Tell us about your event — theme, menu preferences, special requests, etc."></textarea>
+              <span class="cf-error-msg">Please provide event details.</span>
+            </div>
+
+            <!-- Budget & Services -->
+            <div class="cf-section">Budget &amp; Services</div>
+
+            <div class="cf-field" id="cf-budget">
+              <label for="cf_budget">Estimated Budget <span class="req">*</span></label>
+              <div class="cf-select-wrap">
+                <select id="cf_budget" name="Estimated Budget">
+                  <option value="">Select budget range...</option>
+                  <option value="$1,500 - $2,500">$1,500 – $2,500</option>
+                  <option value="$2,500 - $5,000">$2,500 – $5,000</option>
+                  <option value="$5,000+">$5,000+</option>
+                </select>
+              </div>
+              <span class="cf-error-msg">Please select a budget range.</span>
+            </div>
+
+            <div>
+              <label>Additional Services Needed <span class="opt">(optional)</span></label>
+              <div class="cf-check-group">
+                <label class="cf-check-option">
+                  <input type="checkbox" name="Additional Services" value="Vegetarian" />
+                  <span>Vegetarian</span>
+                </label>
+                <label class="cf-check-option">
+                  <input type="checkbox" name="Additional Services" value="Vegan" />
+                  <span>Vegan</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Referral -->
+            <div class="cf-section">One More Thing</div>
+
+            <div class="cf-field" id="cf-referral">
+              <label for="cf_referral">How did you hear about us? <span class="req">*</span></label>
+              <div class="cf-select-wrap">
+                <select id="cf_referral" name="How Did You Hear About Us">
+                  <option value="">Select an option...</option>
+                  <option value="Social Media (Facebook, Instagram)">Social Media (Facebook, Instagram)</option>
+                  <option value="Google Search">Google Search</option>
+                  <option value="Referral from Friends / Family">Referral from Friends / Family</option>
+                  <option value="Event Planner or Venue">Event Planner or Venue</option>
+                  <option value="Saw Us at an Event">Saw Us at an Event</option>
+                </select>
+              </div>
+              <span class="cf-error-msg">Please let us know how you found us.</span>
+            </div>
+
+            <div class="cf-submit-wrap">
+              <button type="submit" class="cf-submit-btn" id="cf_submitBtn">Send Inquiry</button>
+            </div>
+
+          </form>
+
+          <div class="cf-banner success" id="cf_success">
+            <div class="cf-banner-icon">✓</div>
+            <h3>Inquiry Received!</h3>
+            <p>Thank you! We've received your booking inquiry and will be in touch soon.</p>
+          </div>
+
+          <div class="cf-banner fail" id="cf_error">
+            <div class="cf-banner-icon">!</div>
+            <h3>Something went wrong</h3>
+            <p>We couldn't send your inquiry. Please try again or contact us directly by email eat@pizzeriacoco.com</p>
+          </div>
+
+        </div>
+      </div>
+      </div>
       </div>
 
       <div style="margin-top: 40px;">
@@ -321,5 +474,7 @@
         &copy; 2026 Pizzeria Coco. All rights reserved.
       </p>
     </footer>
+    <!-- Core theme JS-->
+    <script src="scripts.js"></script>
   </body>
 </html>
