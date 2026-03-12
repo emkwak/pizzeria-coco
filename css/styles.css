@@ -11078,3 +11078,9 @@ header.masthead h1, header.masthead .h1 {
     height: 120vw;
   }
 }
+
+/* Feature In Logo */
+#press a img:hover {
+  filter: grayscale(100%) !important;
+  opacity: 0.5 !important;
+}
