@@ -11084,3 +11084,7 @@ header.masthead h1, header.masthead .h1 {
   filter: grayscale(100%) !important;
   opacity: 0.5 !important;
 }
+
+footer {
+  text-align: center;
+}
