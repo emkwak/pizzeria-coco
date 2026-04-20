@@ -115,7 +115,7 @@
                         </div>
 
                         <div class="cf-card">
-                            <form id="cateringForm" novalidate>
+                            <form id="cateringForm" novalidate autocomplete="off">
 
                                 <input type="hidden" name="access_key" value="a8b59588-dfd5-4ebe-98ca-4793c0003c89" />
                                 <input type="hidden" name="subject" value="" />
@@ -127,21 +127,19 @@
                                 <div class="cf-row">
                                     <div class="cf-field" id="cf-fullname">
                                         <label for="cf_fullname">Full Name <span class="req">*</span></label>
-                                        <input type="text" id="cf_fullname" name="Full Name" autocomplete="name" />
+                                        <input type="text" id="cf_fullname" name="Full Name" />
                                         <span class="cf-error-msg">Please enter your full name.</span>
                                     </div>
                                     <div class="cf-field" id="cf-phone">
                                         <label for="cf_phone">Phone Number <span class="req">*</span></label>
-                                        <input type="tel" id="cf_phone" name="Phone Number" placeholder="(555) 000-0000"
-                                            autocomplete="tel" />
+                                        <input type="tel" id="cf_phone" name="Phone Number" placeholder="(555) 000-0000" />
                                         <span class="cf-error-msg">Please enter your phone number.</span>
                                     </div>
                                 </div>
 
                                 <div class="cf-field" id="cf-email">
                                     <label for="cf_email">Email Address <span class="req">*</span></label>
-                                    <input type="email" id="cf_email" name="Email Address"
-                                        autocomplete="email" />
+                                    <input type="email" id="cf_email" name="Email Address" />
                                     <span class="cf-error-msg">Please enter a valid email address.</span>
                                 </div>
 
@@ -155,7 +153,7 @@
                                     </div>
                                     <div class="cf-field" id="cf-time">
                                         <label for="cf_time">Event Time<span class="req">*</span></label>
-                                        <input type="text" id="cf_time" name="Event Time" placeholder="Start & End time" autocomplete="off" />
+                                        <input type="text" id="cf_time" name="Event Time" placeholder="Start & End time" />
                                         <span class="cf-error-msg">Please enter the event start & end time.</span>
                                     </div>
                                 </div>
