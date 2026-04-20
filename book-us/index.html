@@ -133,7 +133,8 @@
 
             <div class="cf-field" id="cf-location">
               <label for="cf_location">Event Location Address <span class="req">*</span></label>
-              <input type="text" id="cf_location" name="Event Location" placeholder="123 Main St, City, State, ZIP" />
+              <input type="text" id="cf_location" name="Event Location" placeholder="123 Main St, City, State, ZIP"
+                autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" />
               <span class="cf-error-msg">Please enter the event location.</span>
             </div>
 
